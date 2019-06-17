@@ -29,4 +29,7 @@ public class ExcelReadDemo {
 	@ExcelExport(name = "我是datetime")
 	@ExcelImport
 	private String datetime;
+
+	@ExcelExport(name = "我是下拉列表", format=ExcelDataEnums.CONSTANT_SELECT, constantSelectList={"哈哈", "洗洗", "嘿嘿"}, pointOut = "哈哈哈哈哈哈")
+	private String strList;
 }
